@@ -1,76 +1,86 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>话费充值</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+<！doctype html>
+<超文本标记语言朗="zh-CN">
+<头>
+    <元字符集="UTF-8">
+    <元姓名="视口" 内容="宽度=设备宽度，初始比例=1.0">
+    <标题>话费充值</标题>
+    <风格>
+身体{
+            字体系列:Arial,无衬线;
+            背景色：#f4f4f4；
+            边缘:0;
+            填充:0;
+            显示:弯曲;
+            justify-content:中心;
+            对齐项目:中心;
+            高度:100VH;
         }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
+.容器{
+            背景色：#fff；
+            填充:20PX;
+            边界半径:10PX;
+            箱形阴影:0 4PX 8PX RGBA(0,0,0,0.1);
+            最大宽度:400PX;
+            宽度:100%;
         }
-        .container h1 {
-            text-align: center;
-            color: #333;
+.容器h1{
+            文本对齐:中心;
+            颜色: #333;
         }
-        .form-group {
-            margin-bottom: 15px;
+.form-group{
+            底边距:15PX;
         }
-        .form-group label {
-            display: block;
-            color: #666;
-            margin-bottom: 5px;
+.form-group标签{
+            显示:块;
+            颜色: #666;
+            底边距:5PX;
         }
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
+.窗体组输入，
+.窗体组选择{
+            宽度:100%;
+            填充:10PX;
+            边境:1PX 固体#ccc；
+            边界半径:5PX;
+            箱体尺寸:边框框;
         }
-        .form-group input[type="submit"] {
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
+.form-组输入[类型="收音机"] {
+            宽度:自动;
         }
-        .form-group input[type="submit"]:hover {
-            background-color: #218838;
+.form-组输入[类型="提交"] {
+            背景色：#28a745；
+            颜色：#fff；
+            边境:没有一个;
+            光标:指针;
+            过渡:背景色 0.3s;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>话费充值</h1>
-        <form>
-            <div class="form-group">
-                <label for="phone">手机号码</label>
-                <input type="text" id="phone" name="phone" placeholder="请输入手机号码">
+.form-组输入[类型="提交"]:盘旋 {
+            背景色: #218838;
+        }
+    </风格>
+</头>
+<身体>
+    <div班级="容器">
+        <H1>话费充值</H1>
+        <形式>
+            <div班级="窗体组">
+                <标签为="电话">手机号码</标签>
+                <输入类型="文本" 身份标识="电话" 姓名="电话" 占位符="请输入手机号码">
+            </div>
+            <div班级="窗体组">
+                <标签为="金额">充值金额</标签>
+                <选择身份标识="金额" 姓名="金额">
+                    <选项价值="10">10元</选项>
+                    <选项价值="20">20元</选项>
+                    <选项价值="50">50元</选项>
+                    <选项价值="100">100元</选项>
+                </select>
             </div>
             <div class="form-group">
-                <label for="amount">充值金额</label>
-                <select id="amount" name="amount">
-                    <option value="10">10元</option>
-                    <option value="20">20元</option>
-                    <option value="50">50元</option>
-                    <option value="100">100元</option>
-                </select>
+                <label>支付方式</label>
+                <input type="radio" id="alipay" name="payment" value="alipay">
+                <label for="alipay">支付宝</label>
+                <input type="radio" id="wechat" name="payment" value="wechat">
+                <label for="wechat">微信支付</label>
             </div>
             <div class="form-group">
                 <input type="submit" value="立即充值">
@@ -78,4 +88,4 @@
         </form>
     </div>
 </body>
-</html>
+</超文本标记语言>
